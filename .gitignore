@@ -1,0 +1,22 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment folder
+venv/
+env/
+
+# Ignore CSV and Excel files (if you don’t want to upload attendance data)
+*.csv
+*.xlsx
+
+# Ignore environment variables file
+emailpass.env
+.env
+*.env
+
+# IDE and Windows generated files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
