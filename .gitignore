@@ -8,6 +8,8 @@ env/
 
 # Ignore CSV and Excel files (if you don’t want to upload attendance data)
 *.csv
+# Allow fictional sample data for demonstration
+!sample_data/sample_participants.csv
 *.xlsx
 
 # Ignore environment variables file
