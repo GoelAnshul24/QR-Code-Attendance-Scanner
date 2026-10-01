@@ -187,14 +187,21 @@ This project was developed collaboratively as a group project.
 
 Additional contributors and their respective contributions can be acknowledged here.
 
-## Future Improvements
+## Project Roadmap
 
-- Add a centralized database for participant and attendance records.
-- Develop a web-based dashboard for attendance analytics.
-- Improve QR verification and error handling.
-- Add role-based access for event administrators.
-- Provide real-time attendance statistics.
-- Deploy the system as a web or cloud-based application.
+Planned improvements for future versions:
+
+- [x] QR-based participant verification
+- [x] Attendance tracking
+- [x] Duplicate attendance prevention
+- [x] Email confirmation support
+- [x] Sample participant dataset
+- [ ] Centralized database integration
+- [ ] Web-based attendance dashboard
+- [ ] Real-time attendance analytics
+- [ ] Role-based administrator access
+- [ ] Cloud deployment
+- [ ] Improved logging and error handling
 
 ## Disclaimer
 
