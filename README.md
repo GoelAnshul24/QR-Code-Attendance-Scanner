@@ -143,6 +143,29 @@ The dataset follows the structure:
 
 The sample records are fictional and are provided only for testing and demonstration purposes. Real participant information should not be committed to the repository.
 
+## Troubleshooting
+
+### Camera Not Opening
+- Make sure no other application is currently using the webcam.
+- Check that camera permissions are enabled for Python or your terminal.
+- Restart the application after closing other camera applications.
+
+### QR Code Not Detected
+- Keep the QR code clearly visible in front of the camera.
+- Ensure adequate lighting and avoid excessive glare.
+- Make sure the complete QR code is inside the camera frame.
+
+### Email Not Sending
+- Verify that the email credentials in your environment file are correct.
+- Use an app password if required by your email provider.
+- Check your internet connection and SMTP configuration.
+
+### Missing Python Package
+If the application reports a missing module, reinstall the project dependencies:
+
+```bash
+pip install -r requirements.txt
+
 ## Security
 
 Sensitive information such as email credentials is excluded from version control using `.gitignore`.
