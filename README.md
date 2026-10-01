@@ -127,6 +127,22 @@ python attendance_scanner.py
 7. Confirmation emails can be sent to successfully verified participants.
 8. Updated attendance information can be stored for further analysis.
 
+### Sample Participant Data
+
+A fictional sample dataset is included to demonstrate the expected participant data format:
+
+`sample_data/sample_participants.csv`
+
+The dataset follows the structure:
+
+| Name | Email | UniqueID |
+|------|-------|----------|
+| Anshul Goel | anshul.goel@example.com | EVT001 |
+| Meera Gupta | meera.gupta@example.com | EVT002 |
+| Rohan Verma | rohan.verma@example.com | EVT003 |
+
+The sample records are fictional and are provided only for testing and demonstration purposes. Real participant information should not be committed to the repository.
+
 ## Security
 
 Sensitive information such as email credentials is excluded from version control using `.gitignore`.
