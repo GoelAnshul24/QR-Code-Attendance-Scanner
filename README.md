@@ -139,7 +139,7 @@ The dataset follows the structure:
 |------|-------|----------|
 | Anshul Goel | anshul.goel@example.com | EVT001 |
 | Meera Gupta | meera.gupta@example.com | EVT002 |
-| Rohan Verma | rohan.verma@example.com | EVT003 |
+| Rohan Sharma | rohan.Sharma@example.com | EVT003 |
 
 The sample records are fictional and are provided only for testing and demonstration purposes. Real participant information should not be committed to the repository.
 
