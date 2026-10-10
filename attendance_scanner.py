@@ -183,14 +183,37 @@ def stop_scanning():
 
 def load_main_sheet():
     global main_sheet_path
-    if main_sheet_path:
-        try:
-            return pd.read_excel(main_sheet_path)  # Load the selected Excel file
-        except Exception as e:
-            messagebox.showerror("Error", f"Failed to load the main attendance sheet: {e}")
-            return None
-    else:
+
+    if not main_sheet_path:
         messagebox.showerror("Error", "Please select an Excel file first.")
+        return None
+
+    try:
+        main_sheet = pd.read_excel(main_sheet_path)
+
+        # Validate required columns before starting the scanner
+        required_columns = {"UniqueID", "Name", "Email"}
+        missing_columns = required_columns - set(main_sheet.columns)
+
+        if missing_columns:
+            messagebox.showerror(
+                "Invalid Excel File",
+                "The selected file is missing required columns: "
+                + ", ".join(sorted(missing_columns))
+            )
+            return None
+
+        # Ensure UniqueID values are compared consistently with QR text
+        main_sheet["UniqueID"] = main_sheet["UniqueID"].astype(str).str.strip()
+
+        return main_sheet
+
+    except Exception as e:
+        logging.exception("Failed to load attendance sheet")
+        messagebox.showerror(
+            "Error",
+            f"Failed to load the main attendance sheet: {e}"
+        )
         return None
 
 def select_excel_file():
